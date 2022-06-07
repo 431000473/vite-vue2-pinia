@@ -8,16 +8,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
-        with:
-          persist-credentials: false
+        uses: actions/checkout@v3 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
       - name: Install and Build
         run: |
           npm install
           npm run build
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          ACCESS_TOKEN: ${{ secrets.TEST_ACTION }}
+          personal_token: ${{ secrets.TEST_ACTION }}
           BRANCH: gh-pages
-          FOLDER: build
+          publish_dir: ./dist
