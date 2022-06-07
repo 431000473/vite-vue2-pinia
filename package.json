@@ -2,6 +2,7 @@
   "name": "vue2",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://431000473.github.io/github-actions-demo",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
