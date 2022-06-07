@@ -1,0 +1,1 @@
+import{n as a}from"./index.6aae162d.js";var o=function(){var n=this,e=n.$createElement,r=n._self._c||e;return r("p",[n._v("\u8DEF\u7531")])},_=[];const s={name:"saada"},t={};var c=a(s,o,_,!1,l,null,null,null);function l(n){for(let e in t)this[e]=t[e]}var u=function(){return c.exports}();export{u as default};
